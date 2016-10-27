@@ -30,6 +30,7 @@ class ViewController: UIViewController {
             let msg = notif.userInfo!["msg"] as! String
             self.messages.append(msg)
         }
+   
     }
     
     @IBAction func onUserChanged(_ sender: UISegmentedControl) {

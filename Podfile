@@ -12,7 +12,7 @@ target 'NexmiiHack' do
   pod 'LayoutKit'
   pod 'Alamofire'
   pod 'Dwifft'
-  pod 'RecordButton'
+  
   
   target 'NexmiiHackTests' do
     inherit! :search_paths
