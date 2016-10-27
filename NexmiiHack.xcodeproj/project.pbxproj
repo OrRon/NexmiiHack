@@ -15,6 +15,7 @@
 		2C1DBB891DC2737100196458 /* NexmiiHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB881DC2737100196458 /* NexmiiHackTests.swift */; };
 		2C1DBB941DC2737100196458 /* NexmiiHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB931DC2737100196458 /* NexmiiHackUITests.swift */; };
 		2C1DBBA21DC27E7F00196458 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DBBA11DC27E7F00196458 /* GoogleService-Info.plist */; };
+		2C2717BB1DC28D0700793A6C /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2717BA1DC28D0700793A6C /* Translate.swift */; };
 		77FABC5CA37377F3CCBC9BC6 /* Pods_NexmiiHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1EF5D08FC329C48B2BC94D /* Pods_NexmiiHack.framework */; };
 		829066C3EDD3F4C53166D0CA /* Pods_NexmiiHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A1BDBB9215F318243297D8 /* Pods_NexmiiHackUITests.framework */; };
 		BC26E4C9485E704C273D9834 /* Pods_NexmiiHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4562EC4FE4B2CB6403DBE86 /* Pods_NexmiiHackTests.framework */; };
@@ -53,6 +54,7 @@
 		2C1DBB951DC2737100196458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1DBBA11DC27E7F00196458 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C2717B91DC2822600793A6C /* NexmiiHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NexmiiHack.entitlements; sourceTree = "<group>"; };
+		2C2717BA1DC28D0700793A6C /* Translate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		3543DA4F7A2357276109C0FD /* Pods-NexmiiHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack.debug.xcconfig"; sourceTree = "<group>"; };
 		44A1BDBB9215F318243297D8 /* Pods_NexmiiHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93584BF4807532527A5724CA /* Pods-NexmiiHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				2C2717B91DC2822600793A6C /* NexmiiHack.entitlements */,
 				2C1DBB731DC2737100196458 /* AppDelegate.swift */,
 				2C1DBB751DC2737100196458 /* ViewController.swift */,
+				2C2717BA1DC28D0700793A6C /* Translate.swift */,
 				2C1DBB771DC2737100196458 /* Main.storyboard */,
 				2C1DBB7A1DC2737100196458 /* Assets.xcassets */,
 				2C1DBB7C1DC2737100196458 /* LaunchScreen.storyboard */,
@@ -465,6 +468,7 @@
 			files = (
 				2C1DBB761DC2737100196458 /* ViewController.swift in Sources */,
 				2C1DBB741DC2737100196458 /* AppDelegate.swift in Sources */,
+				2C2717BB1DC28D0700793A6C /* Translate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

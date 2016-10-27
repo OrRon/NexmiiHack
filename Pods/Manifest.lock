@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.0.1)
   - Firebase/Core (3.7.0):
     - FirebaseAnalytics (= 3.4.3)
     - FirebaseCore (= 3.4.3)
@@ -21,11 +22,13 @@ PODS:
   - OneSignal (2.1.15)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Core
   - LayoutKit
   - OneSignal
 
 SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Firebase: 3875e140d77c7572c6d4852faf94144ffcdb0704
   FirebaseAnalytics: 02d0aed8c6246a9c8683ac3e9825c67ceb657bde
   FirebaseCore: 5a885548bbc5f0c410b04f8e9ac9d73ff1221907
@@ -36,6 +39,6 @@ SPEC CHECKSUMS:
   LayoutKit: 48c77be42843fb27fbef49cfeb3a61a70b3bcf8f
   OneSignal: de89d8a0667559332f825dbc2f545af8ce110a5f
 
-PODFILE CHECKSUM: 877bcf890cf8dd96da198f87f4f3a1d9137d9c54
+PODFILE CHECKSUM: 738a864b5354cadb4833029d94ca70ee47b681d2
 
 COCOAPODS: 1.1.0.rc.2
