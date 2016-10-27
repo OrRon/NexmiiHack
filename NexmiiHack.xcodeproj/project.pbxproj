@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1DBB741DC2737100196458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB731DC2737100196458 /* AppDelegate.swift */; };
+		2C1DBB761DC2737100196458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB751DC2737100196458 /* ViewController.swift */; };
+		2C1DBB791DC2737100196458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DBB771DC2737100196458 /* Main.storyboard */; };
+		2C1DBB7B1DC2737100196458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DBB7A1DC2737100196458 /* Assets.xcassets */; };
+		2C1DBB7E1DC2737100196458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DBB7C1DC2737100196458 /* LaunchScreen.storyboard */; };
+		2C1DBB891DC2737100196458 /* NexmiiHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB881DC2737100196458 /* NexmiiHackTests.swift */; };
+		2C1DBB941DC2737100196458 /* NexmiiHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB931DC2737100196458 /* NexmiiHackUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C1DBB851DC2737100196458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1DBB681DC2737000196458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1DBB6F1DC2737000196458;
+			remoteInfo = NexmiiHack;
+		};
+		2C1DBB901DC2737100196458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1DBB681DC2737000196458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1DBB6F1DC2737000196458;
+			remoteInfo = NexmiiHack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1DBB701DC2737100196458 /* NexmiiHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexmiiHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1DBB731DC2737100196458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C1DBB751DC2737100196458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C1DBB781DC2737100196458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C1DBB7A1DC2737100196458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C1DBB7D1DC2737100196458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C1DBB7F1DC2737100196458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1DBB841DC2737100196458 /* NexmiiHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexmiiHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1DBB881DC2737100196458 /* NexmiiHackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexmiiHackTests.swift; sourceTree = "<group>"; };
+		2C1DBB8A1DC2737100196458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1DBB8F1DC2737100196458 /* NexmiiHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexmiiHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1DBB931DC2737100196458 /* NexmiiHackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexmiiHackUITests.swift; sourceTree = "<group>"; };
+		2C1DBB951DC2737100196458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1DBB6D1DC2737000196458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1DBB811DC2737100196458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1DBB8C1DC2737100196458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C1DBB671DC2737000196458 = {
+			isa = PBXGroup;
+			children = (
+				2C1DBB721DC2737100196458 /* NexmiiHack */,
+				2C1DBB871DC2737100196458 /* NexmiiHackTests */,
+				2C1DBB921DC2737100196458 /* NexmiiHackUITests */,
+				2C1DBB711DC2737100196458 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C1DBB711DC2737100196458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C1DBB701DC2737100196458 /* NexmiiHack.app */,
+				2C1DBB841DC2737100196458 /* NexmiiHackTests.xctest */,
+				2C1DBB8F1DC2737100196458 /* NexmiiHackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C1DBB721DC2737100196458 /* NexmiiHack */ = {
+			isa = PBXGroup;
+			children = (
+				2C1DBB731DC2737100196458 /* AppDelegate.swift */,
+				2C1DBB751DC2737100196458 /* ViewController.swift */,
+				2C1DBB771DC2737100196458 /* Main.storyboard */,
+				2C1DBB7A1DC2737100196458 /* Assets.xcassets */,
+				2C1DBB7C1DC2737100196458 /* LaunchScreen.storyboard */,
+				2C1DBB7F1DC2737100196458 /* Info.plist */,
+			);
+			path = NexmiiHack;
+			sourceTree = "<group>";
+		};
+		2C1DBB871DC2737100196458 /* NexmiiHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1DBB881DC2737100196458 /* NexmiiHackTests.swift */,
+				2C1DBB8A1DC2737100196458 /* Info.plist */,
+			);
+			path = NexmiiHackTests;
+			sourceTree = "<group>";
+		};
+		2C1DBB921DC2737100196458 /* NexmiiHackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1DBB931DC2737100196458 /* NexmiiHackUITests.swift */,
+				2C1DBB951DC2737100196458 /* Info.plist */,
+			);
+			path = NexmiiHackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C1DBB6F1DC2737000196458 /* NexmiiHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1DBB981DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHack" */;
+			buildPhases = (
+				2C1DBB6C1DC2737000196458 /* Sources */,
+				2C1DBB6D1DC2737000196458 /* Frameworks */,
+				2C1DBB6E1DC2737000196458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NexmiiHack;
+			productName = NexmiiHack;
+			productReference = 2C1DBB701DC2737100196458 /* NexmiiHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C1DBB831DC2737100196458 /* NexmiiHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1DBB9B1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackTests" */;
+			buildPhases = (
+				2C1DBB801DC2737100196458 /* Sources */,
+				2C1DBB811DC2737100196458 /* Frameworks */,
+				2C1DBB821DC2737100196458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C1DBB861DC2737100196458 /* PBXTargetDependency */,
+			);
+			name = NexmiiHackTests;
+			productName = NexmiiHackTests;
+			productReference = 2C1DBB841DC2737100196458 /* NexmiiHackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C1DBB8E1DC2737100196458 /* NexmiiHackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1DBB9E1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackUITests" */;
+			buildPhases = (
+				2C1DBB8B1DC2737100196458 /* Sources */,
+				2C1DBB8C1DC2737100196458 /* Frameworks */,
+				2C1DBB8D1DC2737100196458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C1DBB911DC2737100196458 /* PBXTargetDependency */,
+			);
+			name = NexmiiHackUITests;
+			productName = NexmiiHackUITests;
+			productReference = 2C1DBB8F1DC2737100196458 /* NexmiiHackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C1DBB681DC2737000196458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Or;
+				TargetAttributes = {
+					2C1DBB6F1DC2737000196458 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KX2Q423DM4;
+						ProvisioningStyle = Automatic;
+					};
+					2C1DBB831DC2737100196458 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KX2Q423DM4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C1DBB6F1DC2737000196458;
+					};
+					2C1DBB8E1DC2737100196458 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KX2Q423DM4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C1DBB6F1DC2737000196458;
+					};
+				};
+			};
+			buildConfigurationList = 2C1DBB6B1DC2737000196458 /* Build configuration list for PBXProject "NexmiiHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C1DBB671DC2737000196458;
+			productRefGroup = 2C1DBB711DC2737100196458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C1DBB6F1DC2737000196458 /* NexmiiHack */,
+				2C1DBB831DC2737100196458 /* NexmiiHackTests */,
+				2C1DBB8E1DC2737100196458 /* NexmiiHackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C1DBB6E1DC2737000196458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1DBB7E1DC2737100196458 /* LaunchScreen.storyboard in Resources */,
+				2C1DBB7B1DC2737100196458 /* Assets.xcassets in Resources */,
+				2C1DBB791DC2737100196458 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1DBB821DC2737100196458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1DBB8D1DC2737100196458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C1DBB6C1DC2737000196458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1DBB761DC2737100196458 /* ViewController.swift in Sources */,
+				2C1DBB741DC2737100196458 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1DBB801DC2737100196458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1DBB891DC2737100196458 /* NexmiiHackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1DBB8B1DC2737100196458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1DBB941DC2737100196458 /* NexmiiHackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C1DBB861DC2737100196458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1DBB6F1DC2737000196458 /* NexmiiHack */;
+			targetProxy = 2C1DBB851DC2737100196458 /* PBXContainerItemProxy */;
+		};
+		2C1DBB911DC2737100196458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1DBB6F1DC2737000196458 /* NexmiiHack */;
+			targetProxy = 2C1DBB901DC2737100196458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C1DBB771DC2737100196458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1DBB781DC2737100196458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C1DBB7C1DC2737100196458 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1DBB7D1DC2737100196458 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C1DBB961DC2737100196458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C1DBB971DC2737100196458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C1DBB991DC2737100196458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KX2Q423DM4;
+				INFOPLIST_FILE = NexmiiHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2C1DBB9A1DC2737100196458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KX2Q423DM4;
+				INFOPLIST_FILE = NexmiiHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2C1DBB9C1DC2737100196458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KX2Q423DM4;
+				INFOPLIST_FILE = NexmiiHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexmiiHack.app/NexmiiHack";
+			};
+			name = Debug;
+		};
+		2C1DBB9D1DC2737100196458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KX2Q423DM4;
+				INFOPLIST_FILE = NexmiiHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexmiiHack.app/NexmiiHack";
+			};
+			name = Release;
+		};
+		2C1DBB9F1DC2737100196458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KX2Q423DM4;
+				INFOPLIST_FILE = NexmiiHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NexmiiHack;
+			};
+			name = Debug;
+		};
+		2C1DBBA01DC2737100196458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KX2Q423DM4;
+				INFOPLIST_FILE = NexmiiHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NexmiiHack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C1DBB6B1DC2737000196458 /* Build configuration list for PBXProject "NexmiiHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1DBB961DC2737100196458 /* Debug */,
+				2C1DBB971DC2737100196458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1DBB981DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1DBB991DC2737100196458 /* Debug */,
+				2C1DBB9A1DC2737100196458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C1DBB9B1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1DBB9C1DC2737100196458 /* Debug */,
+				2C1DBB9D1DC2737100196458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C1DBB9E1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1DBB9F1DC2737100196458 /* Debug */,
+				2C1DBBA01DC2737100196458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C1DBB681DC2737000196458 /* Project object */;
+}
