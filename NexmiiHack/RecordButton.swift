@@ -13,7 +13,8 @@ class RecordButton: UIView {
     var borders:[UIView]!
     var pushed = false
     var circle:UIView!
-    var released:(()->())?
+    var releasedAction:(()->())?
+    var pushedAction:(()->())?
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -27,10 +28,11 @@ class RecordButton: UIView {
         guard !pushed else {
             return
         }
-        pushed = true
         
+        pushed = true
+        pushedAction?()
         borders.enumerated().forEach { (index,border) in
-            UIView.animateKeyframes(withDuration: 2, delay: 0.3 * Double(index), options: UIViewKeyframeAnimationOptions.repeat, animations: {
+            UIView.animateKeyframes(withDuration: 1.5, delay: 0.3 * Double(index), options: UIViewKeyframeAnimationOptions.repeat, animations: {
                 border.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
                 }, completion: { completed in
                     border.transform = CGAffineTransform(scaleX: 1, y: 1)
@@ -43,20 +45,25 @@ class RecordButton: UIView {
         guard pushed else {
             return
         }
-        pushed = false
-        
-        borders.enumerated().forEach { (index,border) in
-            border.layer.removeAllAnimations()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.pushed = false
+            self.releasedAction?()
+            self.borders.enumerated().forEach { (index,border) in
+                border.layer.removeAllAnimations()
+            }
         }
+        
+        
     }
     
-    override func awakeFromNib() {
-        circle = UIView(frame: self.frame)
-        circle.layer.cornerRadius = frame.size.width/2
+    override init(frame: CGRect) {
+        let bound = CGRect(origin: CGPoint(x:0,y:0), size: frame.size)
+        circle = UIView(frame: bound)
+        circle.layer.cornerRadius = bound.size.width/2
         circle.backgroundColor = UIColor.red
         
-        borders = [UIView(frame: frame),UIView(frame: frame),UIView(frame: frame)]
-        
+        borders = [UIView(frame: bound),UIView(frame: bound),UIView(frame: bound)]
+        super.init(frame: frame)
         
         borders.forEach { view in
             view.layer.cornerRadius = frame.size.width/2
@@ -68,6 +75,10 @@ class RecordButton: UIView {
         
         self.addSubview(circle)
         self.backgroundColor = UIColor.clear
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 
