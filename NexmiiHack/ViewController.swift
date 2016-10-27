@@ -9,6 +9,7 @@
 import UIKit
 import LayoutKit
 import Dwifft
+import OneSignal
 
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -21,10 +22,19 @@ class ViewController: UIViewController {
         self.reloadableAdapter = ReloadableViewLayoutAdapter(reloadableView: self.collectionView)
         self.collectionView.delegate = self.reloadableAdapter
         self.collectionView.dataSource = self.reloadableAdapter
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Push"), object: nil, queue: nil) { notif in
+            print("from controller \(notif.userInfo!["msg"]!)")
+            let msg = notif.userInfo!["msg"] as! String
+            self.messages.append(msg)
+        }
     }
     
     @IBAction func onTestClick(_ sender: UIButton) {
-        self.messages.append("Hey There... \(messages.count)")
+        //self.messages.append("Hey There... \(messages.count)")
+        Translate.to(.es,fromLang:.en, text: "Hey There... \(messages.count)") { str in
+            print(str)
+            OneSignal.postNotification(["contents": ["en": str], "include_player_ids": ["314b1639-0fb8-44a9-9038-fd706d8588f4"]])
+        }
     }
     
     var messages = [String]() {

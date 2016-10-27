@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //OneSignal.initWithLaunchOptions(launchOptions, appId: "f5920934-0fb0-4bea-8079-46ecb3238464")
         
         OneSignal.initWithLaunchOptions(launchOptions, appId: "f5920934-0fb0-4bea-8079-46ecb3238464", handleNotificationReceived: { (notification) in
-                print("Received Notification - \(notification?.payload.notificationID)")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Push"), object: nil, userInfo: ["msg" : notification?.payload.title])
+                print("Received Notification - \(notification?.payload.title)")
             },
                 handleNotificationAction: { (result) in
                 
@@ -38,13 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
         //FIRApp.configure()
-        
-        Translate.to(.es,fromLang:.en, text: "I like milk and pizza") { str in
-            print(str)
-            OneSignal.postNotification(["contents": ["en": str], "include_player_ids": ["0f23a9c1-e65f-4e2a-91b4-c022ce335ee9"]])
-        }
-       
-        
         return true
     }
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
