@@ -42,25 +42,41 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kM-Lb-VbF">
-                                <rect key="frame" x="157" y="597" width="61" height="30"/>
+                                <rect key="frame" x="30" y="597" width="61" height="30"/>
                                 <state key="normal" title="RECORD"/>
                                 <connections>
                                     <action selector="onTestClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laK-9Z-Hf6"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jyd-y0-wyR">
+                                <rect key="frame" x="195" y="597" width="150" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="SNB-1r-GRA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Vladimir"/>
+                                    <segment title="Or"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onUserChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ajb-gy-u54"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jyd-y0-wyR" secondAttribute="trailing" constant="30" id="6BS-F9-uUG"/>
                             <constraint firstAttribute="trailing" secondItem="Tnk-wQ-SiW" secondAttribute="trailing" id="INv-Y3-Pxv"/>
-                            <constraint firstItem="7kM-Lb-VbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SnK-An-6BP"/>
                             <constraint firstItem="Tnk-wQ-SiW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UwF-4j-uVt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7kM-Lb-VbF" secondAttribute="bottom" constant="40" id="WbZ-4D-Jji"/>
                             <constraint firstItem="Tnk-wQ-SiW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X7Y-Nl-nrZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tnk-wQ-SiW" secondAttribute="bottom" constant="100" id="hxV-y2-bPc"/>
+                            <constraint firstItem="7kM-Lb-VbF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="jKm-Xf-NMY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jyd-y0-wyR" secondAttribute="bottom" constant="42" id="r5z-uU-Pgy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Tnk-wQ-SiW" id="caX-3k-piD"/>
+                        <outlet property="segUser" destination="Jyd-y0-wyR" id="tPB-P8-Fgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

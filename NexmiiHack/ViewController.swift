@@ -13,8 +13,11 @@ import OneSignal
 
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var segUser: UISegmentedControl!
     
     var reloadableAdapter: ReloadableViewLayoutAdapter!
+    
+    var pushKey = "0f23a9c1-e65f-4e2a-91b4-c022ce335ee9"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +32,20 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func onUserChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            pushKey = "0f23a9c1-e65f-4e2a-91b4-c022ce335ee9"
+        }
+        else {
+            pushKey = "314b1639-0fb8-44a9-9038-fd706d8588f4"
+        }
+    }
+    
     @IBAction func onTestClick(_ sender: UIButton) {
         //self.messages.append("Hey There... \(messages.count)")
         Translate.to(.es,fromLang:.en, text: "Hey There... \(messages.count)") { str in
             print(str)
-            OneSignal.postNotification(["contents": ["en": str], "include_player_ids": ["314b1639-0fb8-44a9-9038-fd706d8588f4"]])
+            OneSignal.postNotification(["contents": ["en": str], "include_player_ids": [self.pushKey]])
         }
     }
     
