@@ -9,6 +9,7 @@ target 'NexmiiHack' do
 
   pod 'Firebase/Core'
   pod 'OneSignal'
+  pod 'LayoutKit'
   
   target 'NexmiiHackTests' do
     inherit! :search_paths
