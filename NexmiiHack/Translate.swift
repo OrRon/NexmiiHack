@@ -20,13 +20,14 @@ enum Language:String {
 
 struct Translate {
     
-    static func to(_ lang:Language, fromLang:Language, text:String, complition:(String)->()) {
-        Alamofire.request("https://translate.yandex.net/api/v1.5/tr.json/translate?key=\(key)&text=Hello%20Vladimir&lang=en-es").responseJSON { (response) in
+    static func to(_ lang:Language, fromLang:Language, text:String, complition:@escaping (String)->()) {
+        let url = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=\(key)&text=\(text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)&lang=\(fromLang.rawValue)-\(lang.rawValue)"
+        Alamofire.request(url).responseJSON { (response) in
             if let JSON = response.result.value {
                 let dict = JSON as! NSDictionary
-                let text = dict.object(forKey:"text")
-                print(text)
-                print(lang.rawValue)
+                let arr = dict.object(forKey:"text") as! NSArray
+                let returnedText = arr.firstObject! as! String
+                complition(returnedText)
             }
         }
     }
