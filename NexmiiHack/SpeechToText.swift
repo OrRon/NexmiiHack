@@ -37,6 +37,7 @@ class SpeechToText : NSObject, SFSpeechRecognizerDelegate {
     
     func stop() -> String {
         audioEngine.stop()
+        //audioEngine.reset()
         recognitionRequest?.endAudio()
         
         return receivedText
@@ -53,7 +54,7 @@ class SpeechToText : NSObject, SFSpeechRecognizerDelegate {
         
         let audioSession = AVAudioSession.sharedInstance()  //2
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryRecord)
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try audioSession.setMode(AVAudioSessionModeMeasurement)
             try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
         } catch {
