@@ -21,18 +21,10 @@ class ViewController: UIViewController {
         self.reloadableAdapter = ReloadableViewLayoutAdapter(reloadableView: self.collectionView)
         self.collectionView.delegate = self.reloadableAdapter
         self.collectionView.dataSource = self.reloadableAdapter
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.messages = ["Hello There"]
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.messages.append("What's")
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
-            self.messages.append("UP?")
-        }
+    }
+    
+    @IBAction func onTestClick(_ sender: UIButton) {
+        self.messages.append("Hey There... \(messages.count)")
     }
     
     var messages = [String]() {
@@ -56,21 +48,10 @@ class ViewController: UIViewController {
             reloadableAdapter.reload(width:self.collectionView.frame.width, synchronous: false, batchUpdates: batchUpdates, layoutProvider: {
                 return [Section(header: nil, items: layouts, footer: nil)]
             }) {
-                
-//                if !newValue.isEmpty {
-//                    self.hideLoading()
-//                }
-//                
-//                self.scrollAndBounceTheLatestIntentIdIfNeeded(self.latestIntentId)
-//                self.latestIntentId = nil
-//                
-//                self.updatePullPager(NSDate(long: stateDate))
-//                
-//                delay(0.5) {
-//                    self.reloadableAdapter.updateTitle(self.timeLineCollectionVC)
-//                }
+                self.collectionView.scrollToItem(at: IndexPath(row: self.messages.count - 1, section: 0),
+                                                 at: .bottom,
+                                                 animated: true)
             }
-            
         }
     }
 }
