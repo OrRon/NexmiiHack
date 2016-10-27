@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     var reloadableAdapter: ReloadableViewLayoutAdapter!
     
     let speechToText = SpeechToText()
+    let textToSpeech = TextToSpeech()
     
     
     
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Push"), object: nil, queue: nil) { notif in
             print("from controller \(notif.userInfo!["msg"]!)")
             let msg = notif.userInfo!["msg"] as! String
+            self.textToSpeech.speak(text: msg)
             self.messages.append(msg)
         }
         let recordButton = RecordButton(frame: CGRect(x: 20, y: 580, width: 63, height: 63))
