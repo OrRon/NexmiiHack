@@ -11,6 +11,7 @@ target 'NexmiiHack' do
   pod 'OneSignal'
   pod 'LayoutKit'
   pod 'Alamofire'
+  pod 'Dwifft'
   
   target 'NexmiiHackTests' do
     inherit! :search_paths
