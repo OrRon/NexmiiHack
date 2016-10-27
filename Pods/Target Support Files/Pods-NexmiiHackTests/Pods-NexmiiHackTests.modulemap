@@ -1,0 +1,6 @@
+framework module Pods_NexmiiHackTests {
+  umbrella header "Pods-NexmiiHackTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

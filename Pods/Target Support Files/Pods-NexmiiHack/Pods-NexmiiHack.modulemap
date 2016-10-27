@@ -1,0 +1,6 @@
+framework module Pods_NexmiiHack {
+  umbrella header "Pods-NexmiiHack-umbrella.h"
+
+  export *
+  module * { export * }
+}

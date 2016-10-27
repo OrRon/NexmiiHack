@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A046CBA4D64036F763659F2FFF664B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2E850344026518208CC0B47D28EA1C4F /* Pods-NexmiiHackTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C5A70889AEC5E66C5FCAB321500A609 /* Pods-NexmiiHackTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7094A8FB86B70B94522E074383A5BD32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		78EB321F14CFDAFCD697DB568668EAF5 /* Pods-NexmiiHackUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6305A1A033EEB3E50C781DA6770818E /* Pods-NexmiiHackUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F1474431983AA34B9A1F32514D28283 /* Pods-NexmiiHack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3EC41CB17CB07056A22B5959DFA2B /* Pods-NexmiiHack-dummy.m */; };
+		9E0210EEF624E8E2EB67D056632A65BD /* Pods-NexmiiHackUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B042285AA9491CA710A6CC41789AA7 /* Pods-NexmiiHackUITests-dummy.m */; };
+		B1F0F489BC0C3E5202C5004E2511E980 /* Pods-NexmiiHack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA2A2053795F21F28B2356782D595FB /* Pods-NexmiiHack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17BE9DCB9C10456937033EF0A6DEAD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DF460E0B1C85DED288AEE48816D17C6D /* Pods-NexmiiHackTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CF5519CE4381DCEE10BA5FF753A865 /* Pods-NexmiiHackTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0545E4910C228D4BC31422B712E71A7D /* Pods-NexmiiHackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexmiiHackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C5A70889AEC5E66C5FCAB321500A609 /* Pods-NexmiiHackTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NexmiiHackTests-umbrella.h"; sourceTree = "<group>"; };
+		0FE9E47DD377A59DE5EEDD997972788F /* Pods_NexmiiHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EC8E2DC2D0962C698496C377C8B742 /* Pods-NexmiiHack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NexmiiHack-frameworks.sh"; sourceTree = "<group>"; };
+		17CF5519CE4381DCEE10BA5FF753A865 /* Pods-NexmiiHackTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NexmiiHackTests-dummy.m"; sourceTree = "<group>"; };
+		19FE2FAC76402925EAA0EFC70FE358AF /* Pods-NexmiiHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexmiiHackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23E81CDA32EBC54EC13604031477401F /* Pods-NexmiiHack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NexmiiHack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		25B042285AA9491CA710A6CC41789AA7 /* Pods-NexmiiHackUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NexmiiHackUITests-dummy.m"; sourceTree = "<group>"; };
+		29C3EC41CB17CB07056A22B5959DFA2B /* Pods-NexmiiHack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NexmiiHack-dummy.m"; sourceTree = "<group>"; };
+		378610E801428A58B461D8AD898C0110 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38C789E8BB852EF0144774CC1CD26CF9 /* Pods-NexmiiHackUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NexmiiHackUITests.modulemap"; sourceTree = "<group>"; };
+		487746C09848A1BE4A746AE273BC9E0C /* Pods-NexmiiHackTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NexmiiHackTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4CA2A2053795F21F28B2356782D595FB /* Pods-NexmiiHack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NexmiiHack-umbrella.h"; sourceTree = "<group>"; };
+		4CA59074C74B5817E46A8DA501002576 /* Pods-NexmiiHackTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NexmiiHackTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		511F02A73DA4E5BCE15208DCA445D89D /* Pods-NexmiiHackUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NexmiiHackUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6DC10EA37D0C2255EE6D81A1AE5D8775 /* Pods-NexmiiHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexmiiHackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84DFFFABCE90DE1F10A6BF0A3544C191 /* Pods-NexmiiHack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NexmiiHack.modulemap"; sourceTree = "<group>"; };
+		87D33EB5F7A7DA1565D4CF02F321090C /* Pods-NexmiiHackUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NexmiiHackUITests-resources.sh"; sourceTree = "<group>"; };
+		8BC7DC62D6D02B90CBB222D35B368F02 /* Pods-NexmiiHackTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NexmiiHackTests-frameworks.sh"; sourceTree = "<group>"; };
+		8ED3DEA87B71C1734BDA7D47E035D09C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A047B316672608F4EFBEC91AF430848B /* Pods-NexmiiHackUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NexmiiHackUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A206936A5944513CA023AC6402CFD0BB /* Pods-NexmiiHack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NexmiiHack-acknowledgements.plist"; sourceTree = "<group>"; };
+		A4E0F17028E405C43369A98DF6BF9659 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF87EAFDCC42161AE89FCA803C1817B /* Pods_NexmiiHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA5500D65528F3E720DC39318E3BC43 /* Pods-NexmiiHackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexmiiHackTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0CC52BB64DCEA8BA03CC025EDA6D103 /* Pods-NexmiiHackTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NexmiiHackTests-resources.sh"; sourceTree = "<group>"; };
+		B6305A1A033EEB3E50C781DA6770818E /* Pods-NexmiiHackUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NexmiiHackUITests-umbrella.h"; sourceTree = "<group>"; };
+		C02D121F4347E58597756DAC322301AE /* Pods-NexmiiHackTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NexmiiHackTests.modulemap"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E27F551611669268937C074F5E227570 /* Pods-NexmiiHackUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NexmiiHackUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EACFC10544456DBA188A31D2EFB7E182 /* Pods-NexmiiHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexmiiHack.debug.xcconfig"; sourceTree = "<group>"; };
+		F055026B7D204B2873B71FC5BE6FEE58 /* Pods-NexmiiHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexmiiHack.release.xcconfig"; sourceTree = "<group>"; };
+		F780098CFDA62278CB166280677D00BA /* Pods-NexmiiHack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NexmiiHack-resources.sh"; sourceTree = "<group>"; };
+		F8EF40F2CC03A04481834D9AE49F4494 /* Pods_NexmiiHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E627BC10E92FDE898E98177A6FF95E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A046CBA4D64036F763659F2FFF664B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76DE5D0FC261DBA194AE9882C74B1A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7094A8FB86B70B94522E074383A5BD32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8CDE396C88A674906F95AC7AF39B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17BE9DCB9C10456937033EF0A6DEAD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35B4D243340C76ED8406DA0347B42B3F /* Pods-NexmiiHackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				378610E801428A58B461D8AD898C0110 /* Info.plist */,
+				38C789E8BB852EF0144774CC1CD26CF9 /* Pods-NexmiiHackUITests.modulemap */,
+				A047B316672608F4EFBEC91AF430848B /* Pods-NexmiiHackUITests-acknowledgements.markdown */,
+				E27F551611669268937C074F5E227570 /* Pods-NexmiiHackUITests-acknowledgements.plist */,
+				25B042285AA9491CA710A6CC41789AA7 /* Pods-NexmiiHackUITests-dummy.m */,
+				511F02A73DA4E5BCE15208DCA445D89D /* Pods-NexmiiHackUITests-frameworks.sh */,
+				87D33EB5F7A7DA1565D4CF02F321090C /* Pods-NexmiiHackUITests-resources.sh */,
+				B6305A1A033EEB3E50C781DA6770818E /* Pods-NexmiiHackUITests-umbrella.h */,
+				0545E4910C228D4BC31422B712E71A7D /* Pods-NexmiiHackUITests.debug.xcconfig */,
+				6DC10EA37D0C2255EE6D81A1AE5D8775 /* Pods-NexmiiHackUITests.release.xcconfig */,
+			);
+			name = "Pods-NexmiiHackUITests";
+			path = "Target Support Files/Pods-NexmiiHackUITests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		711FDACF79E048C0147163F851BEC7D0 /* Pods-NexmiiHack */ = {
+			isa = PBXGroup;
+			children = (
+				A4E0F17028E405C43369A98DF6BF9659 /* Info.plist */,
+				84DFFFABCE90DE1F10A6BF0A3544C191 /* Pods-NexmiiHack.modulemap */,
+				23E81CDA32EBC54EC13604031477401F /* Pods-NexmiiHack-acknowledgements.markdown */,
+				A206936A5944513CA023AC6402CFD0BB /* Pods-NexmiiHack-acknowledgements.plist */,
+				29C3EC41CB17CB07056A22B5959DFA2B /* Pods-NexmiiHack-dummy.m */,
+				10EC8E2DC2D0962C698496C377C8B742 /* Pods-NexmiiHack-frameworks.sh */,
+				F780098CFDA62278CB166280677D00BA /* Pods-NexmiiHack-resources.sh */,
+				4CA2A2053795F21F28B2356782D595FB /* Pods-NexmiiHack-umbrella.h */,
+				EACFC10544456DBA188A31D2EFB7E182 /* Pods-NexmiiHack.debug.xcconfig */,
+				F055026B7D204B2873B71FC5BE6FEE58 /* Pods-NexmiiHack.release.xcconfig */,
+			);
+			name = "Pods-NexmiiHack";
+			path = "Target Support Files/Pods-NexmiiHack";
+			sourceTree = "<group>";
+		};
+		76E92A5742A3C2ECA9C736DDA7E6A37D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF87EAFDCC42161AE89FCA803C1817B /* Pods_NexmiiHack.framework */,
+				F8EF40F2CC03A04481834D9AE49F4494 /* Pods_NexmiiHackTests.framework */,
+				0FE9E47DD377A59DE5EEDD997972788F /* Pods_NexmiiHackUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				76E92A5742A3C2ECA9C736DDA7E6A37D /* Products */,
+				AFD881600B5ED74D3368E379DF27B577 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AFD881600B5ED74D3368E379DF27B577 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				711FDACF79E048C0147163F851BEC7D0 /* Pods-NexmiiHack */,
+				E93C13732742B7C08A4C3157137EDACA /* Pods-NexmiiHackTests */,
+				35B4D243340C76ED8406DA0347B42B3F /* Pods-NexmiiHackUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E93C13732742B7C08A4C3157137EDACA /* Pods-NexmiiHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ED3DEA87B71C1734BDA7D47E035D09C /* Info.plist */,
+				C02D121F4347E58597756DAC322301AE /* Pods-NexmiiHackTests.modulemap */,
+				4CA59074C74B5817E46A8DA501002576 /* Pods-NexmiiHackTests-acknowledgements.markdown */,
+				487746C09848A1BE4A746AE273BC9E0C /* Pods-NexmiiHackTests-acknowledgements.plist */,
+				17CF5519CE4381DCEE10BA5FF753A865 /* Pods-NexmiiHackTests-dummy.m */,
+				8BC7DC62D6D02B90CBB222D35B368F02 /* Pods-NexmiiHackTests-frameworks.sh */,
+				B0CC52BB64DCEA8BA03CC025EDA6D103 /* Pods-NexmiiHackTests-resources.sh */,
+				0C5A70889AEC5E66C5FCAB321500A609 /* Pods-NexmiiHackTests-umbrella.h */,
+				19FE2FAC76402925EAA0EFC70FE358AF /* Pods-NexmiiHackTests.debug.xcconfig */,
+				AFA5500D65528F3E720DC39318E3BC43 /* Pods-NexmiiHackTests.release.xcconfig */,
+			);
+			name = "Pods-NexmiiHackTests";
+			path = "Target Support Files/Pods-NexmiiHackTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B4BC8B756A0A89948A0D64F1564DB66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E850344026518208CC0B47D28EA1C4F /* Pods-NexmiiHackTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9A7526160B92014835440B2662CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F0F489BC0C3E5202C5004E2511E980 /* Pods-NexmiiHack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AA95E91F8193CD9D9AC815B3E8D8E8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EB321F14CFDAFCD697DB568668EAF5 /* Pods-NexmiiHackUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18F61F53855265826A624902F5933419 /* Pods-NexmiiHackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D902C2BDB9B1B0133F11623FCB663297 /* Build configuration list for PBXNativeTarget "Pods-NexmiiHackUITests" */;
+			buildPhases = (
+				39E85AA668400EE42C12A4695F4ADDF4 /* Sources */,
+				76DE5D0FC261DBA194AE9882C74B1A0A /* Frameworks */,
+				8AA95E91F8193CD9D9AC815B3E8D8E8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NexmiiHackUITests";
+			productName = "Pods-NexmiiHackUITests";
+			productReference = 0FE9E47DD377A59DE5EEDD997972788F /* Pods_NexmiiHackUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91D18263D33CBF96FC291629E98D065F /* Pods-NexmiiHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249D0714801778C952A1FBD58D2A7B97 /* Build configuration list for PBXNativeTarget "Pods-NexmiiHackTests" */;
+			buildPhases = (
+				0D2071C094334DC7A81FBDECA9E587A9 /* Sources */,
+				8F8CDE396C88A674906F95AC7AF39B62 /* Frameworks */,
+				0B4BC8B756A0A89948A0D64F1564DB66 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NexmiiHackTests";
+			productName = "Pods-NexmiiHackTests";
+			productReference = F8EF40F2CC03A04481834D9AE49F4494 /* Pods_NexmiiHackTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBDF5B5455FC0DD96AAA3F6234F98845 /* Pods-NexmiiHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1C7EA19023BBAF761082C82C1FA048 /* Build configuration list for PBXNativeTarget "Pods-NexmiiHack" */;
+			buildPhases = (
+				E4524D9288A357DD32C990031544C193 /* Sources */,
+				2E627BC10E92FDE898E98177A6FF95E5 /* Frameworks */,
+				47EB9A7526160B92014835440B2662CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NexmiiHack";
+			productName = "Pods-NexmiiHack";
+			productReference = ABF87EAFDCC42161AE89FCA803C1817B /* Pods_NexmiiHack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 76E92A5742A3C2ECA9C736DDA7E6A37D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBDF5B5455FC0DD96AAA3F6234F98845 /* Pods-NexmiiHack */,
+				91D18263D33CBF96FC291629E98D065F /* Pods-NexmiiHackTests */,
+				18F61F53855265826A624902F5933419 /* Pods-NexmiiHackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D2071C094334DC7A81FBDECA9E587A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF460E0B1C85DED288AEE48816D17C6D /* Pods-NexmiiHackTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E85AA668400EE42C12A4695F4ADDF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0210EEF624E8E2EB67D056632A65BD /* Pods-NexmiiHackUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4524D9288A357DD32C990031544C193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1474431983AA34B9A1F32514D28283 /* Pods-NexmiiHack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		377F96C850A78933CD9FB91390F40CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACFC10544456DBA188A31D2EFB7E182 /* Pods-NexmiiHack.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NexmiiHack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NexmiiHack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F4501894682845B5D2603B7CACD98C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA5500D65528F3E720DC39318E3BC43 /* Pods-NexmiiHackTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NexmiiHackTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NexmiiHackTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		802DC8A1AC49AFFE8FC8E519DE548CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FE2FAC76402925EAA0EFC70FE358AF /* Pods-NexmiiHackTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NexmiiHackTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NexmiiHackTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6E7DE805267480E5CA82315AC16516A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F055026B7D204B2873B71FC5BE6FEE58 /* Pods-NexmiiHack.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NexmiiHack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NexmiiHack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A90829B8C8DCBE55C12A857CA2071036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0545E4910C228D4BC31422B712E71A7D /* Pods-NexmiiHackUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NexmiiHackUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NexmiiHackUITests/Pods-NexmiiHackUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NexmiiHackUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB250423C1485C301C11BC01B13B10AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC10EA37D0C2255EE6D81A1AE5D8775 /* Pods-NexmiiHackUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NexmiiHackUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NexmiiHackUITests/Pods-NexmiiHackUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NexmiiHackUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		249D0714801778C952A1FBD58D2A7B97 /* Build configuration list for PBXNativeTarget "Pods-NexmiiHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802DC8A1AC49AFFE8FC8E519DE548CD0 /* Debug */,
+				5F4501894682845B5D2603B7CACD98C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1C7EA19023BBAF761082C82C1FA048 /* Build configuration list for PBXNativeTarget "Pods-NexmiiHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377F96C850A78933CD9FB91390F40CB3 /* Debug */,
+				A6E7DE805267480E5CA82315AC16516A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D902C2BDB9B1B0133F11623FCB663297 /* Build configuration list for PBXNativeTarget "Pods-NexmiiHackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90829B8C8DCBE55C12A857CA2071036 /* Debug */,
+				AB250423C1485C301C11BC01B13B10AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

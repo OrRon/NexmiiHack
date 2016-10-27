@@ -14,6 +14,9 @@
 		2C1DBB7E1DC2737100196458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DBB7C1DC2737100196458 /* LaunchScreen.storyboard */; };
 		2C1DBB891DC2737100196458 /* NexmiiHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB881DC2737100196458 /* NexmiiHackTests.swift */; };
 		2C1DBB941DC2737100196458 /* NexmiiHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DBB931DC2737100196458 /* NexmiiHackUITests.swift */; };
+		77FABC5CA37377F3CCBC9BC6 /* Pods_NexmiiHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1EF5D08FC329C48B2BC94D /* Pods_NexmiiHack.framework */; };
+		829066C3EDD3F4C53166D0CA /* Pods_NexmiiHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A1BDBB9215F318243297D8 /* Pods_NexmiiHackUITests.framework */; };
+		BC26E4C9485E704C273D9834 /* Pods_NexmiiHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4562EC4FE4B2CB6403DBE86 /* Pods_NexmiiHackTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		2C1DBB8F1DC2737100196458 /* NexmiiHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexmiiHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1DBB931DC2737100196458 /* NexmiiHackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexmiiHackUITests.swift; sourceTree = "<group>"; };
 		2C1DBB951DC2737100196458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3543DA4F7A2357276109C0FD /* Pods-NexmiiHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack.debug.xcconfig"; sourceTree = "<group>"; };
+		44A1BDBB9215F318243297D8 /* Pods_NexmiiHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93584BF4807532527A5724CA /* Pods-NexmiiHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE98F3A4C7BC734EAF473ED /* Pods-NexmiiHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHackUITests/Pods-NexmiiHackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2325CB96E69E430995ADF05 /* Pods-NexmiiHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack.release.xcconfig"; sourceTree = "<group>"; };
+		D4562EC4FE4B2CB6403DBE86 /* Pods_NexmiiHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D04AEC1BA6A2B302F13AC0 /* Pods-NexmiiHackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHackUITests/Pods-NexmiiHackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA1EF5D08FC329C48B2BC94D /* Pods_NexmiiHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmiiHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F905AC7C4F8D116898326590 /* Pods-NexmiiHackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmiiHackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FABC5CA37377F3CCBC9BC6 /* Pods_NexmiiHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC26E4C9485E704C273D9834 /* Pods_NexmiiHackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829066C3EDD3F4C53166D0CA /* Pods_NexmiiHackUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0FE7D50D6951269426B7BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA1EF5D08FC329C48B2BC94D /* Pods_NexmiiHack.framework */,
+				D4562EC4FE4B2CB6403DBE86 /* Pods_NexmiiHackTests.framework */,
+				44A1BDBB9215F318243297D8 /* Pods_NexmiiHackUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C1DBB671DC2737000196458 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				2C1DBB871DC2737100196458 /* NexmiiHackTests */,
 				2C1DBB921DC2737100196458 /* NexmiiHackUITests */,
 				2C1DBB711DC2737100196458 /* Products */,
+				A586D7CAAD5A6669FE1ABEBE /* Pods */,
+				1C0FE7D50D6951269426B7BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = NexmiiHackUITests;
 			sourceTree = "<group>";
 		};
+		A586D7CAAD5A6669FE1ABEBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3543DA4F7A2357276109C0FD /* Pods-NexmiiHack.debug.xcconfig */,
+				D2325CB96E69E430995ADF05 /* Pods-NexmiiHack.release.xcconfig */,
+				93584BF4807532527A5724CA /* Pods-NexmiiHackTests.debug.xcconfig */,
+				F905AC7C4F8D116898326590 /* Pods-NexmiiHackTests.release.xcconfig */,
+				E7D04AEC1BA6A2B302F13AC0 /* Pods-NexmiiHackUITests.debug.xcconfig */,
+				CCE98F3A4C7BC734EAF473ED /* Pods-NexmiiHackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1DBB981DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHack" */;
 			buildPhases = (
+				FA35B2ACED83467AD14802F4 /* [CP] Check Pods Manifest.lock */,
 				2C1DBB6C1DC2737000196458 /* Sources */,
 				2C1DBB6D1DC2737000196458 /* Frameworks */,
 				2C1DBB6E1DC2737000196458 /* Resources */,
+				150F17BDB5426861B5B7D2D4 /* [CP] Embed Pods Frameworks */,
+				0BA6C40463D1BB023EBF6417 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1DBB9B1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackTests" */;
 			buildPhases = (
+				E0477F984C2351FD8DB60D06 /* [CP] Check Pods Manifest.lock */,
 				2C1DBB801DC2737100196458 /* Sources */,
 				2C1DBB811DC2737100196458 /* Frameworks */,
 				2C1DBB821DC2737100196458 /* Resources */,
+				8744C8F3B443A82CDEB2FAC1 /* [CP] Embed Pods Frameworks */,
+				567877B31863A5B2CDEB22A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1DBB9E1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackUITests" */;
 			buildPhases = (
+				0C6439EBBC607B8E0C1411C2 /* [CP] Check Pods Manifest.lock */,
 				2C1DBB8B1DC2737100196458 /* Sources */,
 				2C1DBB8C1DC2737100196458 /* Frameworks */,
 				2C1DBB8D1DC2737100196458 /* Resources */,
+				DB4C9B827CEDA2A26062F668 /* [CP] Embed Pods Frameworks */,
+				C2364FBACD1A5136E60FACC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BA6C40463D1BB023EBF6417 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C6439EBBC607B8E0C1411C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		150F17BDB5426861B5B7D2D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexmiiHack/Pods-NexmiiHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567877B31863A5B2CDEB22A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8744C8F3B443A82CDEB2FAC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexmiiHackTests/Pods-NexmiiHackTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2364FBACD1A5136E60FACC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexmiiHackUITests/Pods-NexmiiHackUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB4C9B827CEDA2A26062F668 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NexmiiHackUITests/Pods-NexmiiHackUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0477F984C2351FD8DB60D06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA35B2ACED83467AD14802F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1DBB6C1DC2737000196458 /* Sources */ = {
@@ -413,10 +600,12 @@
 		};
 		2C1DBB991DC2737100196458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3543DA4F7A2357276109C0FD /* Pods-NexmiiHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KX2Q423DM4;
 				INFOPLIST_FILE = NexmiiHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,10 +615,12 @@
 		};
 		2C1DBB9A1DC2737100196458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2325CB96E69E430995ADF05 /* Pods-NexmiiHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KX2Q423DM4;
 				INFOPLIST_FILE = NexmiiHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hack.cool.NexmiiHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +630,7 @@
 		};
 		2C1DBB9C1DC2737100196458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93584BF4807532527A5724CA /* Pods-NexmiiHackTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +646,7 @@
 		};
 		2C1DBB9D1DC2737100196458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F905AC7C4F8D116898326590 /* Pods-NexmiiHackTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +662,7 @@
 		};
 		2C1DBB9F1DC2737100196458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D04AEC1BA6A2B302F13AC0 /* Pods-NexmiiHackUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KX2Q423DM4;
@@ -483,6 +677,7 @@
 		};
 		2C1DBBA01DC2737100196458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE98F3A4C7BC734EAF473ED /* Pods-NexmiiHackUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KX2Q423DM4;
@@ -514,6 +709,7 @@
 				2C1DBB9A1DC2737100196458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C1DBB9B1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +718,7 @@
 				2C1DBB9D1DC2737100196458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C1DBB9E1DC2737100196458 /* Build configuration list for PBXNativeTarget "NexmiiHackUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +727,7 @@
 				2C1DBBA01DC2737100196458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
