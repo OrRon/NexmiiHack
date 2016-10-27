@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Dwifft/Dwifft.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LayoutKit/LayoutKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RecordButton/RecordButton.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Dwifft/Dwifft.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LayoutKit/LayoutKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RecordButton/RecordButton.framework"
 fi
