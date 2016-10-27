@@ -22,6 +22,7 @@ struct Translate {
     
     static func to(_ lang:Language, fromLang:Language, text:String, complition:@escaping (String)->()) {
         let url = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=\(key)&text=\(text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)&lang=\(fromLang.rawValue)-\(lang.rawValue)"
+        print(url)
         Alamofire.request(url).responseJSON { (response) in
             if let JSON = response.result.value {
                 let dict = JSON as! NSDictionary
