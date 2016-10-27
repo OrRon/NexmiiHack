@@ -14,10 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let speech = SpeechToText()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //OneSignal.initWithLaunchOptions(launchOptions, appId: "f5920934-0fb0-4bea-8079-46ecb3238464")
+        
+//        speech.authorize()
+//        speech.start(locale: "en-US")
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//            print(self.speech.stop())
+//        }
         
         OneSignal.initWithLaunchOptions(launchOptions, appId: "f5920934-0fb0-4bea-8079-46ecb3238464", handleNotificationReceived: { (notification) in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Push"), object: nil, userInfo: ["msg" : notification?.payload.title])
