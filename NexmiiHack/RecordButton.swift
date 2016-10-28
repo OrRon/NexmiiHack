@@ -13,6 +13,7 @@ class RecordButton: UIView {
     var borders:[UIView]!
     var pushed = false
     var circle:UIView!
+    var imageView:UIImageView!
     var releasedAction:(()->())?
     var pushedAction:(()->())?
     let color = UIColor(red:1.00, green:0.25, blue:0.51, alpha:1.00)
@@ -62,7 +63,9 @@ class RecordButton: UIView {
         circle = UIView(frame: bound)
         circle.layer.cornerRadius = bound.size.width/2
         circle.backgroundColor = color
-        
+        imageView = UIImageView(frame: bound.insetBy(dx: 20, dy: 20))
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = #imageLiteral(resourceName: "star")
         borders = [UIView(frame: bound),UIView(frame: bound),UIView(frame: bound)]
         super.init(frame: frame)
         
@@ -75,6 +78,7 @@ class RecordButton: UIView {
         
         
         self.addSubview(circle)
+        self.addSubview(imageView)
         self.backgroundColor = UIColor.clear
     }
     
