@@ -17,3 +17,8 @@ This is being done in the following way:
 ## Screen shot
 
 ![](http://i.imgur.com/wEDaZUl.png)
+
+## Credits
+
+*Vladimir Kofman*
+*Or Ron*
