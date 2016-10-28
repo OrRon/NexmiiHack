@@ -50,21 +50,27 @@ extension Message {
         switch self.type {
         case .Received:
             return
+                InsetLayout<UIView>(insets: UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15),
+                                    sublayout:
                 InsetLayout<BubbleViewRecv>(insets: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15),
                                             alignment: .topTrailing,
                                             sublayout: LabelLayout<UILabel>(text:self.text)) {view in
                                                 
                                                 view.backgroundColor = .clear
-            }
+            })
             
         case .Sent:
             return
+                
+                InsetLayout<UIView>(insets: UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15),
+                                    sublayout:
+                
                 InsetLayout<BubbleViewSend>(insets: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15),
                                             alignment: .topLeading,
                                             sublayout: LabelLayout<UILabel>(text:self.text)) {view in
                                                 
                                                 view.backgroundColor = .clear
-            }
+            })
         }
     }
 }

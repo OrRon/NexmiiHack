@@ -81,9 +81,9 @@ class ViewController: UIViewController {
     
     func send(string:String) {
         //self.messages.append("Hey There... \(messages.count)")
+        self.messages.append(Message(text: string, type: .Sent, id: UUID().uuidString))
         Translate.to(.es,fromLang:.en, text: string) { str in
             print(str)
-            self.messages.append(Message(text: str, type: .Sent, id: UUID().uuidString))
             OneSignal.postNotification(["contents": ["en": str], "include_player_ids": [self.pushKey]])
         }
     }
