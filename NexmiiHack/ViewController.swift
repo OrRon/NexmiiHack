@@ -11,6 +11,24 @@ import LayoutKit
 import Dwifft
 import OneSignal
 
+enum MessageType {
+    case Sent
+    case Received
+}
+
+struct Message {
+    let text: String
+    let type: MessageType
+    let id: String
+}
+
+
+extension Message : Equatable {}
+
+func ==(lhs: Message, rhs: Message) -> Bool {
+    return lhs.id == rhs.id
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segUser: UISegmentedControl!
@@ -21,9 +39,6 @@ class ViewController: UIViewController {
     
     let speechToText = SpeechToText()
     let textToSpeech = TextToSpeech()
-    
-    
-    
     
     var pushKey = "0f23a9c1-e65f-4e2a-91b4-c022ce335ee9"
 
@@ -37,7 +52,7 @@ class ViewController: UIViewController {
             print("from controller \(notif.userInfo!["msg"]!)")
             let msg = notif.userInfo!["msg"] as! String
             self.textToSpeech.speak(text: msg)
-            self.messages.append(msg)
+            self.messages.append(Message(text: msg, type: .Received, id: UUID().uuidString))
         }
         let recordButton = RecordButton(frame: CGRect(x: 20, y: 580, width: 63, height: 63))
         self.view.addSubview(recordButton)
@@ -68,11 +83,12 @@ class ViewController: UIViewController {
         //self.messages.append("Hey There... \(messages.count)")
         Translate.to(.es,fromLang:.en, text: string) { str in
             print(str)
+            self.messages.append(Message(text: str, type: .Sent, id: UUID().uuidString))
             OneSignal.postNotification(["contents": ["en": str], "include_player_ids": [self.pushKey]])
         }
     }
     
-    var messages = [String]() {
+    var messages = [Message]() {
         willSet {
             let diff = self.messages.diff(newValue)
 

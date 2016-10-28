@@ -45,14 +45,26 @@ class BubbleViewRecv: UIView {
     
 }
 
-
-extension String {
+extension Message {
     func getLayout() -> Layout {
-        return
-            InsetLayout<BubbleViewRecv>(insets: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15),
-                                sublayout: LabelLayout<UILabel>(text:self)) {view in
-        
-                                    view.backgroundColor = .clear
+        switch self.type {
+        case .Received:
+            return
+                InsetLayout<BubbleViewRecv>(insets: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15),
+                                            alignment: .topTrailing,
+                                            sublayout: LabelLayout<UILabel>(text:self.text)) {view in
+                                                
+                                                view.backgroundColor = .clear
+            }
+            
+        case .Sent:
+            return
+                InsetLayout<BubbleViewSend>(insets: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15),
+                                            alignment: .topLeading,
+                                            sublayout: LabelLayout<UILabel>(text:self.text)) {view in
+                                                
+                                                view.backgroundColor = .clear
+            }
         }
     }
 }
