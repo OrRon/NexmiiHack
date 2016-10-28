@@ -15,6 +15,13 @@ class TextToSpeech : NSObject, AVSpeechSynthesizerDelegate {
     func speak(text:String, locale:String? = nil) {
         speechSynthesizer.delegate = self
         
+        let audioSession = AVAudioSession.sharedInstance()  //2
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+        } catch {
+            print("audioSession properties weren't set because of an error.")
+        }
+        
         if !speechSynthesizer.isSpeaking {
 
             let speechUtterance = AVSpeechUtterance(string: text)
