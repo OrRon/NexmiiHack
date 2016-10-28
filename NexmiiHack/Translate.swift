@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import UIKit
 
-let key = "trnsl.1.1.20161027T192107Z.6b76d233595ccd0c.c25ed5e580c73d6d13ce2a2bf682cec6860bec4e"
+let key = "<Yandex key>"
 
 enum Language:String {
     case en = "en"

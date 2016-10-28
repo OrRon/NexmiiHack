@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     let speechToText = SpeechToText()
     let textToSpeech = TextToSpeech()
     
-    var pushKey = "314b1639-0fb8-44a9-9038-fd706d8588f4"
+    var pushKey = "<PushKey>"
 
     override func viewDidLayoutSubviews() {
         self.recordButton.center = CGPoint(x:self.view.frame.width/2 , y: self.recordButton.center.y)
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         self.view.addSubview(recordButton)
         recordButton.pushedAction = {
             print("Pushed!")
-            self.speechToText.start(locale: "en")
+            self.speechToText.start(locale: "es")
             
         }
         recordButton.releasedAction = {
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     func send(string:String) {
         //self.messages.append("Hey There... \(messages.count)")
         self.messages.append(Message(text: string, type: .Sent, id: UUID().uuidString))
-        Translate.to(.es,fromLang:.en, text: string) { str in
+        Translate.to(.en,fromLang:.es, text: string) { str in
             print(str)
             OneSignal.postNotification(["contents": ["en": str], "include_player_ids": [self.pushKey]])
         }
