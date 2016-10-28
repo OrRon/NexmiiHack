@@ -37,7 +37,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jyd-y0-wyR">
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jyd-y0-wyR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="SNB-1r-GRA"/>
                                 </constraints>

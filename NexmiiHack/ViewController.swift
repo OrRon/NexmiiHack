@@ -36,12 +36,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var placeholderRecord: UIView!
     
     var reloadableAdapter: ReloadableViewLayoutAdapter!
-    
+    var recordButton:RecordButton!
     let speechToText = SpeechToText()
     let textToSpeech = TextToSpeech()
     
-    var pushKey = "0f23a9c1-e65f-4e2a-91b4-c022ce335ee9"
+    var pushKey = "314b1639-0fb8-44a9-9038-fd706d8588f4"
 
+    override func viewDidLayoutSubviews() {
+        self.recordButton.center = CGPoint(x:self.view.frame.width/2 , y: self.recordButton.center.y)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.speechToText.authorize()
@@ -54,7 +57,7 @@ class ViewController: UIViewController {
             self.textToSpeech.speak(text: msg)
             self.messages.append(Message(text: msg, type: .Received, id: UUID().uuidString))
         }
-        let recordButton = RecordButton(frame: CGRect(x: 20, y: 580, width: 63, height: 63))
+        recordButton = RecordButton(frame: CGRect(x: self.view.frame.width/2, y: 580, width: 63, height: 63))
         self.view.addSubview(recordButton)
         recordButton.pushedAction = {
             print("Pushed!")
