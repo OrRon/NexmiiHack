@@ -15,6 +15,7 @@ class RecordButton: UIView {
     var circle:UIView!
     var releasedAction:(()->())?
     var pushedAction:(()->())?
+    let color = UIColor(red:1.00, green:0.25, blue:0.51, alpha:1.00)
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -60,7 +61,7 @@ class RecordButton: UIView {
         let bound = CGRect(origin: CGPoint(x:0,y:0), size: frame.size)
         circle = UIView(frame: bound)
         circle.layer.cornerRadius = bound.size.width/2
-        circle.backgroundColor = UIColor.red
+        circle.backgroundColor = color
         
         borders = [UIView(frame: bound),UIView(frame: bound),UIView(frame: bound)]
         super.init(frame: frame)
@@ -68,7 +69,7 @@ class RecordButton: UIView {
         borders.forEach { view in
             view.layer.cornerRadius = frame.size.width/2
             view.layer.borderWidth = 2.0
-            view.layer.borderColor = UIColor.red.cgColor
+            view.layer.borderColor = color.cgColor
             self.addSubview(view)
         }
         

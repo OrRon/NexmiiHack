@@ -13,7 +13,7 @@ class BubbleViewSend: UIView {
     
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath(roundedRect: rect.insetBy(dx: 5, dy: 5), cornerRadius: 10)
-        UIColor.red.setFill()
+        UIColor(red:0.77, green:0.79, blue:0.91, alpha:1.00).setFill()
         path.fill()
         
         let triPath = UIBezierPath()
@@ -21,7 +21,7 @@ class BubbleViewSend: UIView {
         path.addLine(to: CGPoint(x: 20, y: rect.size.height))
         path.addLine(to: CGPoint(x: 20+3+3, y: rect.size.height-5))
         path.addLine(to: CGPoint(x:20, y: rect.size.height-5))
-        UIColor.red.setFill()
+        UIColor(red:0.77, green:0.79, blue:0.91, alpha:1.00).setFill()
         path.fill()
     }
     
@@ -31,7 +31,7 @@ class BubbleViewRecv: UIView {
     
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath(roundedRect: rect.insetBy(dx: 5, dy: 5), cornerRadius: 10)
-        UIColor.red.setFill()
+        UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.00).setFill()
         path.fill()
         
         let triPath = UIBezierPath()
@@ -39,7 +39,7 @@ class BubbleViewRecv: UIView {
         path.addLine(to: CGPoint(x: rect.size.width-20, y: rect.size.height))
         path.addLine(to: CGPoint(x: rect.size.width-20-3-3, y: rect.size.height-5))
         path.addLine(to: CGPoint(x:rect.size.width-20, y: rect.size.height-5))
-        UIColor.red.setFill()
+        UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.00).setFill()
         path.fill()
     }
     
